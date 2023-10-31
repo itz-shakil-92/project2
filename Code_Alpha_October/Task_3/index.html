@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #777;
+        }
+        #age-form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <p>Enter your date of birth:</p>
+    <input type="number" id="birthDate" placeholder="Day" min="1" max="31">
+    <input type="number" id="birthMonth" placeholder="Month" min="1" max="12">
+    <input type="number" id="birthYear" placeholder="Year">
+    <br>
+    <button onclick="calculateAge()">Calculate Age</button>
+    <p id="result"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
