@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Average</title>
+</head>
+<body>
+  <h1>Average of two no.</h1>
+
+  <label for="num1">Number 1:</label>
+  <input type="number" id="num1"><br>
+
+  <label for="num2">Number 2:</label>
+  <input type="number" id="num2"><br>
+
+  <button onclick="calculateAverage()">Calculate</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateAverage() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+
+      var average = (num1 + num2) / 2;
+
+      document.getElementById("result").innerHTML = "Average: " + average;
+    }
+  </script>
+</body>
+</html>
